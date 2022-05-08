@@ -4,8 +4,7 @@ from flask import Blueprint
 views = Blueprint("views", __name__)
 
 #Views
-@views.route('/')
-@views.route('/index')
+@views.route("/")
 def index():
     '''
     View root page function that returns the index page and its data
