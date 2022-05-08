@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark p-4" id="myNavbar">
     <div class="container-fluid">
-        <a class="navbar-brand fs-1 text-uppercase" style="color: #809324;" href="#">Pitch Garden</a>
+        <a class="navbar-brand fs-1 text-uppercase" style="color: #B7B5B3;" href="#">Pitch Garden</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,18 +21,15 @@
                 </li>               
             </ul>
             <div class="d-flex navbar-nav">
-                {% if user.is_authenticated%}
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/login"><button type="button" class="btn btn-outline-success text-white">Log-In</button></a>
                 </li>
-                {% else %}
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/sign-up"><button type="button" class="btn btn-outline-success text-white">Sign Up</button></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/logout"><button type="button" class="btn btn-outline-success text-white">Log Out</button></a>
-                </li>  
-                {% endif %}                            
+                </li>                             
             </div>
         </div>
     </div>
