@@ -21,3 +21,8 @@ def sign_up():
 @auth.route("/logout")
 def logout():
     return redirect(url_for("views.index"))  
+
+@auth.route("/user/add", methods=['GET', 'POST'])
+def add_user():
+    return render_template("user.html") 
+
